@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk / Jasa</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around; /* Distributes space evenly between and around the cards */
+            flex-wrap: wrap; /* Allows cards to wrap to the next line if they overflow */
+            gap: 20px; /* Adds space between the cards */
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+            border-radius: 8px 8px 0 0;
+        }
+        .card-body {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STREET WEAR</h1>
+        <nav>
+            <ul>
+                <li><a href="produk.html">Produk / Jasa</a></li>
+                <li><a href="transaksi.html">Input Transaksi</a></li>
+                <li><a href="kontak.html">Kontak Kami</a></li>
+                <li><a href="tentang.html">Tentang Perusahaan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>SHIRT</h2>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/fb/bd/bd/fbbdbd1b1e7bf754c66ec703a37a263f.jpg" alt="Produk 1">
+                <div class="card-body">
+                    <h3 class="card-title">Stussy</h3>
+                    <p class="card-text">800.000
+                    </p>
+                    <a href="transaksi.html" class="btn">Beli / Pesan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/52/2c/54/522c5472fece7886d9251cff744e4fc5.jpg" alt="Produk 2">
+                <div class="card-body">
+                    <h3 class="card-title">carhartt</h3>
+                    <p class="card-text">950.000</p>
+                    <a href="transaksi.html" class="btn">Beli / Pesan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/68/97/fa/6897fa8d8412481513cd6330126195a1.jpg" alt="Produk 2">
+                <div class="card-body">
+                    <h3 class="card-title">supreme</h3>
+                    <p class="card-text">1000.000</p>
+                    <a href="transaksi.html" class="btn">Beli / Pesan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/db/ce/26/dbce260a061aa8122b1780d29f8ae53a.jpg" alt="Produk 2">
+                <div class="card-body">
+                    <h3 class="card-title">awake ny</h3>
+                    <p class="card-text">950.000</p>
+                    <a href="transaksi.html" class="btn">Beli / Pesan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/6c/a0/12/6ca01229b1851e5f7f4630e7edc8266b.jpg" alt="Produk 2">
+                <div class="card-body">
+                    <h3 class="card-title">obey</h3>
+                    <p class="card-text">800.000</p>
+                    <a href="transaksi.html" class="btn">Beli / Pesan</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/564x/a1/9b/09/a19b0970352152f92723bf51969add8c.jpg" alt="Produk 2">
+                <div class="card-body">
+                    <h3 class="card-title">fucking awesome collab</h3>
+                    <p class="card-text">1.150.000</p>
+                    <a href="transaksi.html" class="btn">Beli / Pesan</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <marquee>Ini adalah footer dengan marquee.</marquee>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Transaksi</title>
+    <style>
+        /* Global Styles */
+        body, header, footer {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const transactionForm = document.getElementById('transactionForm');
+            transactionForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                // Simulasi pengiriman data transaksi dan alihkan ke halaman struk/invoice
+                alert('Transaksi berhasil!');
+                window.location.href = 'struk.html';
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>STREET WEAR</h1>
+        <nav>
+            <ul>
+                <li><a href="produk.html">Produk / Jasa</a></li>
+                <li><a href="transaksi.html">Input Transaksi</a></li>
+                <li><a href="kontak.html">Kontak Kami</a></li>
+                <li><a href="tentang.html">Tentang Perusahaan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Input Transaksi</h2>
+            <form id="transactionForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" required></textarea>
+                <button type="submit">Checkout / Buat Pesanan</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <marquee>Ini adalah footer dengan marquee.</marquee>
+    </footer>
+</body>
+</html>
